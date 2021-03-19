@@ -1,0 +1,28 @@
+{
+  "name": "richardhaeser/typo3-web-vitals",
+  "description": "",
+  "type": "typo3-cms-extension",
+  "license": "GPL-3.0-or-later",
+  "require": {
+    "typo3/cms-core": "^10.4 || ^11.1",
+    "php": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "RichardHaeser\\WebVitals\\": "Classes/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Richard Haeser",
+      "email": "richard@richardhaeser.com",
+      "homepage": "https://www.richardhaeser.com",
+      "role": "Developer"
+    }
+  ],
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "webvitals"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "entrypoints": {
+    "master-js": {
+      "js": [
+        "/Resources/Public/Build/runtime.js",
+        "/Resources/Public/Build/master-js.js"
+      ]
+    },
+    "master-css": {
+      "js": [
+        "/Resources/Public/Build/runtime.js"
+      ],
+      "css": [
+        "/Resources/Public/Build/master-css.css"
+      ]
+    }
+  }
+}
