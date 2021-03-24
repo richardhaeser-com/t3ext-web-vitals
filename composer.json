@@ -9,7 +9,8 @@
     "typo3/cms-extbase": "^10.4 || ^11.1",
     "typo3/cms-fluid": "^10.4 || ^11.1",
     "php": "^7.4 || ^8.0",
-    "ext-json": "*"
+    "ext-json": "*",
+    "haassie/page-speed-insights": "dev-master"
   },
   "autoload": {
     "psr-4": {
