@@ -14,5 +14,4 @@ webvitals {
 
     10 = USER_INT
     10.userFunc = RichardHaeser\WebVitals\ResultSaver->render
-
 }
