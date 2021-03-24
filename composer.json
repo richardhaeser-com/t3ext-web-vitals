@@ -5,6 +5,9 @@
   "license": "GPL-3.0-or-later",
   "require": {
     "typo3/cms-core": "^10.4 || ^11.1",
+    "typo3/cms-frontend": "^10.4 || ^11.1",
+    "typo3/cms-extbase": "^10.4 || ^11.1",
+    "typo3/cms-fluid": "^10.4 || ^11.1",
     "php": "^7.0",
     "ext-json": "*"
   },
@@ -27,14 +30,19 @@
     }
   },
   "require-dev": {
-    "friendsofphp/php-cs-fixer": "^2.18"
+    "friendsofphp/php-cs-fixer": "^2.18",
+    "overtrue/phplint": "^2.3",
+    "phpstan/phpstan": "^0.12.82"
   },
   "scripts": {
     "cgl": [
       "php-cs-fixer fix -v --dry-run --using-cache false"
     ],
-    "cgl-fix": [
+    "cgl:fix": [
       "php-cs-fixer fix -v --using-cache false"
+    ],
+    "test:php:lint": [
+      "phplint"
     ]
   }
 
