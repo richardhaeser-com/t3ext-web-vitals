@@ -44,7 +44,6 @@ class TimingViewHelper extends AbstractViewHelper
             } else {
                 $suffix = ' ms';
             }
-
         }
         return number_format($floatToFormat, $arguments['decimals'], ',', '.') . $suffix;
     }

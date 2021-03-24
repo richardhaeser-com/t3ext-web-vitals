@@ -62,7 +62,6 @@ class ResultSaver
             } else {
                 $returnValue = ['status' => 'error', 'errorMessage' => 'Invalid hash'];
             }
-
         } else {
             $returnValue = ['status' => 'error', 'errorMessage' => 'Not a valid result'];
         }
