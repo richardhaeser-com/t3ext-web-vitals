@@ -1,0 +1,31 @@
+.webvitals-overall-result {
+  margin-bottom: 2rem;
+}
+.webvitals-score-good {
+  color: #018642;
+}
+.webvitals-score-improvement {
+  color: #d04900;
+}
+.webvitals-score-poor {
+  color: #eb0f00;
+}
+.webvitals-chart {
+  display: flex;
+  margin-top: 1rem;
+  .webvitals-chart-bar {
+	padding: 4px;
+	&.webvitals-good {
+	  background-color: #0cce6b;
+	  color: #fff;
+	}
+	&.webvitals-improvement {
+	  background-color: #ffa400;
+	  color: #000;
+	}
+	&.webvitals-poor {
+	  background-color: #ff4e42;
+	  color: #fff;
+	}
+  }
+}

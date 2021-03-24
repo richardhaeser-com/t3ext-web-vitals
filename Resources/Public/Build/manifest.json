@@ -1,5 +1,7 @@
 {
-  "Resources/Public/Build/master-js.js": "/Resources/Public/Build/master-js.js",
-  "Resources/Public/Build/master-css.css": "/Resources/Public/Build/master-css.css",
-  "Resources/Public/Build/runtime.js": "/Resources/Public/Build/runtime.js"
+  "Resources/Public/Build/frontend-js.js": "/Resources/Public/Build/frontend-js.js",
+  "Resources/Public/Build/backend-css.css": "/Resources/Public/Build/backend-css.css",
+  "Resources/Public/Build/runtime.js": "/Resources/Public/Build/runtime.js",
+  "Resources/Public/Build/polyfill.js": "/Resources/Public/Build/./polyfill.js",
+  "Resources/Public/Build/modules/polyfill.js": "/Resources/Public/Build/./modules/polyfill.js"
 }

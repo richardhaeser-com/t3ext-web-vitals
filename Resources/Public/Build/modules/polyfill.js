@@ -1,0 +1,1 @@
+import{firstInputPolyfill,resetFirstInputPolyfill}from"./lib/polyfills/firstInputPolyfill.js";import{getFirstHiddenTime}from"./lib/polyfills/getFirstHiddenTimePolyfill.js";resetFirstInputPolyfill(),self.webVitals={firstInputPolyfill,resetFirstInputPolyfill,get firstHiddenTime(){return getFirstHiddenTime()}};

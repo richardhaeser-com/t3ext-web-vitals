@@ -1,0 +1,18 @@
+webvitals = PAGE
+webvitals {
+    typeNum = 1616226116
+    config {
+        no_cache = 1
+        disableAllHeaderCode = 1
+        debug = 0
+        additionalHeaders {
+            10 {
+                header = Content-Type: application/json; charset=UTF-8
+            }
+        }
+    }
+
+    10 = USER_INT
+    10.userFunc = RichardHaeser\WebVitals\ResultSaver->render
+
+}

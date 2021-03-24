@@ -1,0 +1,60 @@
+<html xmlns:webvitals="http://typo3.org/ns/RichardHaeser/WebVitals/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:if condition="{totalNumberOfResults}">
+    <f:then>
+        <div class="row">
+            <div class="col-sm-12 webvitals-overall-result">
+                <f:if condition="{passCoreWebVitals}">
+                    <f:then>
+                        <f:format.raw><f:translate key="LLL:EXT:webvitals/Resources/Private/Language/locallang_tca.xlf:result.passed" /></f:format.raw>
+                    </f:then>
+                    <f:else>
+                        <f:format.raw><f:translate key="LLL:EXT:webvitals/Resources/Private/Language/locallang_tca.xlf:result.notPassed" /></f:format.raw>
+                    </f:else>
+                </f:if>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <f:render section="score" arguments="{metric: 'FID', data: fid}" />
+            </div>
+            <div class="col-sm-4">
+                <f:render section="score" arguments="{metric: 'LCP', data: lcp}" />
+            </div>
+            <div class="col-sm-4">
+                <f:render section="score" arguments="{metric: 'CLS', data: cls}" />
+            </div>
+        </div>
+    </f:then>
+    <f:else>
+        <f:be.infobox title="Web Vitals" state="-1">
+            <f:format.raw><f:translate key="LLL:EXT:webvitals/Resources/Private/Language/locallang_tca.xlf:noInformation" /></f:format.raw>
+        </f:be.infobox>
+    </f:else>
+</f:if>
+
+
+<f:section name="score">
+    <div class="row">
+        <div class="col-sm-8"><strong><f:translate key="LLL:EXT:webvitals/Resources/Private/Language/locallang_tca.xlf:{metric}" /></strong></div>
+        <div class="col-sm-4 text-right webvitals-score-{data.score}">
+            <f:if condition="{metric} !== 'CLS'">
+                <f:then>
+                    <webvitals:timing decimals="3" humanReadableTime="true">{data.average}</webvitals:timing>
+                </f:then>
+                <f:else>
+                    <webvitals:timing decimals="0">{data.average}</webvitals:timing>
+                </f:else>
+            </f:if>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="webvitals-chart">
+                <div class="webvitals-chart-bar webvitals-good" data-toggle="tooltip" data-placement="top" title="{f:translate(key: 'LLL:EXT:webvitals/Resources/Private/Language/locallang_tca.xlf:{metric}.good', arguments: '{0: data.percentage.good}')}" style="flex-grow: {data.percentage.good};">{data.percentage.good}%</div>
+                <div class="webvitals-chart-bar webvitals-improvement" data-toggle="tooltip" data-placement="top" title="{f:translate(key: 'LLL:EXT:webvitals/Resources/Private/Language/locallang_tca.xlf:{metric}.improvement', arguments: '{0: data.percentage.improvement}')}" style="flex-grow: {data.percentage.improvement};">{data.percentage.improvement}%</div>
+                <div class="webvitals-chart-bar webvitals-poor" data-toggle="tooltip" data-placement="top" title="{f:translate(key: 'LLL:EXT:webvitals/Resources/Private/Language/locallang_tca.xlf:{metric}.poor', arguments: '{0: data.percentage.poor}')}" style="flex-grow: {data.percentage.poor};">{data.percentage.poor}%</div>
+            </div>
+        </div>
+    </div>
+</f:section>

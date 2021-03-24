@@ -1,0 +1,1 @@
+define(["jquery","TYPO3/CMS/PageSpeedInsights/Dist/Chart.min"],(function(e,i){"use strict";let t={selector:".webvitals_score",initialize:function(){alert("foobar")}};return t.initialize(),t}));

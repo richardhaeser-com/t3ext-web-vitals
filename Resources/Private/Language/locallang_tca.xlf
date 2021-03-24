@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2021-03-20T08:30:00Z">
+        <header/>
+        <body>
+            <trans-unit id="tx_webvitals_results.title">
+                <source>Web Vitals result</source>
+            </trans-unit>
+            <trans-unit id="tx_webvitals_results.date">
+                <source>Date</source>
+            </trans-unit>
+            <trans-unit id="tx_webvitals_results.metric">
+                <source>Metric</source>
+            </trans-unit>
+            <trans-unit id="tx_webvitals_results.result_id">
+                <source>Result ID</source>
+            </trans-unit>
+            <trans-unit id="tx_webvitals_results.result">
+                <source>Result</source>
+            </trans-unit>
+            <trans-unit id="tx_webvitals_results.tab.results">
+                <source>Results</source>
+            </trans-unit>
+            <trans-unit id="tx_webvitals_results.tab.language">
+                <source>Language</source>
+            </trans-unit>
+            <trans-unit id="FID">
+                <source>First Input Delay (FID)</source>
+            </trans-unit>
+            <trans-unit id="FID.good">
+                <source><![CDATA[%s percent of loads for this page have a good (< 100 ms) First Input Delay (FID).]]></source>
+            </trans-unit>
+            <trans-unit id="FID.improvement">
+                <source><![CDATA[%s percent of loads for this page have a (100 ms ~ 300 ms) First Input Delay (FID) that needs improvement.]]></source>
+            </trans-unit>
+            <trans-unit id="FID.poor">
+                <source><![CDATA[%s percent of loads for this page have a poor (> 300 ms) First Input Delay (FID).]]></source>
+            </trans-unit>
+            <trans-unit id="LCP">
+                <source>Largest Contentful Paint (LCP)</source>
+            </trans-unit>
+            <trans-unit id="LCP.good">
+                <source><![CDATA[%s percent of loads for this page have a good (< 2.5 s) Largest Contentful Paint (LCP).]]></source>
+            </trans-unit>
+            <trans-unit id="LCP.improvement">
+                <source><![CDATA[%s percent of loads for this page have a (2.5 s ~ 4 s) Largest Contentful Paint (LCP) that needs improvement.]]></source>
+            </trans-unit>
+            <trans-unit id="LCP.poor">
+                <source><![CDATA[%s percent of loads for this page have a poor (> 4 s) Largest Contentful Paint (LCP).]]></source>
+            </trans-unit>
+            <trans-unit id="CLS">
+                <source>Cumulative Layout Shift (CLS)</source>
+            </trans-unit>
+            <trans-unit id="CLS.good">
+                <source><![CDATA[%s percent of loads for this page have a good (< 0.1) Cumulative Layout Shift (CLS).]]></source>
+            </trans-unit>
+            <trans-unit id="CLS.improvement">
+                <source><![CDATA[%s percent of loads for this page have a (0.1 ~ 0.25) Cumulative Layout Shift (CLS) that needs improvement.]]></source>
+            </trans-unit>
+            <trans-unit id="CLS.poor">
+                <source><![CDATA[%s percent of loads for this page have a poor (> 0.25) Cumulative Layout Shift (CLS).]]></source>
+            </trans-unit>
+            <trans-unit id="result.notPassed">
+                <source><![CDATA[Over the previous 28-day collection period, the collected data shows that this page <span class="webvitals-score-poor"><strong>does not pass</strong></span> the <a href="https://web.dev/vitals/" target="_blank">Core Web Vitals</a> assessment.]]></source>
+            </trans-unit>
+            <trans-unit id="result.passed">
+                <source><![CDATA[Over the previous 28-day collection period, the collected data shows that this page <span class="webvitals-score-good"><strong>passes</strong></span> the <a href="https://web.dev/vitals/" target="_blank">Core Web Vitals</a> assessment.]]></source>
+            </trans-unit>
+            <trans-unit id="noInformation">
+                <source><![CDATA[Over the previous 28-day collection period, no data is collected to check if this page passes the <a href="https://web.dev/vitals/" target="_blank">Core Web Vitals</a> assessment.]]></source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

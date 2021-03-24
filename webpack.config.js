@@ -8,8 +8,13 @@ Encore
     .setOutputPath('./Resources/Public/Build')
     .setPublicPath('/Resources/Public/Build')
 
-    .addEntry('master-js', './Resources/Private/JavaScript/Main.js')
-    .addStyleEntry('master-css', './Resources/Private/Style/Main.scss')
+    .addEntry('frontend-js', './Resources/Private/JavaScript/Frontend.js')
+    .addStyleEntry('backend-css', './Resources/Private/Style/Backend.scss')
+    .copyFiles([{
+        from: './node_modules/web-vitals/dist/',
+        to: './[path][name].[ext]',
+        pattern: /polyfill.js$/
+    }])
     .enableSingleRuntimeChunk()
     .cleanupOutputBeforeBuild()
     .enableSourceMaps(!Encore.isProduction())

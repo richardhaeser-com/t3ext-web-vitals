@@ -1,17 +1,17 @@
 {
   "entrypoints": {
-    "master-js": {
+    "frontend-js": {
       "js": [
         "/Resources/Public/Build/runtime.js",
-        "/Resources/Public/Build/master-js.js"
+        "/Resources/Public/Build/frontend-js.js"
       ]
     },
-    "master-css": {
+    "backend-css": {
       "js": [
         "/Resources/Public/Build/runtime.js"
       ],
       "css": [
-        "/Resources/Public/Build/master-css.css"
+        "/Resources/Public/Build/backend-css.css"
       ]
     }
   }
