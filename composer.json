@@ -10,7 +10,7 @@
     "typo3/cms-fluid": "^10.4 || ^11.1",
     "php": "^7.4 || ^8.0",
     "ext-json": "*",
-    "haassie/page-speed-insights": "dev-master"
+    "haassie/page-speed-insights": "^3.0"
   },
   "autoload": {
     "psr-4": {
